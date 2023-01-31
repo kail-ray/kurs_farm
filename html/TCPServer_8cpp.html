@@ -1,0 +1,137 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "https://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/xhtml;charset=UTF-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=9"/>
+<meta name="generator" content="Doxygen 1.9.1"/>
+<meta name="viewport" content="width=device-width, initial-scale=1"/>
+<title>TCPServer: Файл TCPServer.cpp</title>
+<link href="tabs.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="dynsections.js"></script>
+<link href="search/search.css" rel="stylesheet" type="text/css"/>
+<script type="text/javascript" src="search/searchdata.js"></script>
+<script type="text/javascript" src="search/search.js"></script>
+<link href="doxygen.css" rel="stylesheet" type="text/css" />
+</head>
+<body>
+<div id="top"><!-- do not remove this div, it is closed by doxygen! -->
+<div id="titlearea">
+<table cellspacing="0" cellpadding="0">
+ <tbody>
+ <tr style="height: 56px;">
+  <td id="projectalign" style="padding-left: 0.5em;">
+   <div id="projectname">TCPServer
+   </div>
+  </td>
+ </tr>
+ </tbody>
+</table>
+</div>
+<!-- end header part -->
+<!-- Создано системой Doxygen 1.9.1 -->
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+var searchBox = new SearchBox("searchBox", "search",false,'Поиск','.html');
+/* @license-end */
+</script>
+<script type="text/javascript" src="menudata.js"></script>
+<script type="text/javascript" src="menu.js"></script>
+<script type="text/javascript">
+/* @license magnet:?xt=urn:btih:cf05388f2679ee054f2beb29a391d25f4e673ac3&amp;dn=gpl-2.0.txt GPL-v2 */
+$(function() {
+  initMenu('',true,false,'search.php','Поиск');
+  $(document).ready(function() { init_search(); });
+});
+/* @license-end */</script>
+<div id="main-nav"></div>
+<!-- window showing the filter options -->
+<div id="MSearchSelectWindow"
+     onmouseover="return searchBox.OnSearchSelectShow()"
+     onmouseout="return searchBox.OnSearchSelectHide()"
+     onkeydown="return searchBox.OnSearchSelectKey(event)">
+</div>
+
+<!-- iframe showing the search results (closed by default) -->
+<div id="MSearchResultsWindow">
+<iframe src="javascript:void(0)" frameborder="0" 
+        name="MSearchResults" id="MSearchResults">
+</iframe>
+</div>
+
+</div><!-- top -->
+<div class="header">
+  <div class="summary">
+<a href="#define-members">Макросы</a>  </div>
+  <div class="headertitle">
+<div class="title">Файл TCPServer.cpp</div>  </div>
+</div><!--header-->
+<div class="contents">
+<div class="textblock"><code>#include &quot;TCPServer.h&quot;</code><br />
+<code>#include &lt;netinet/in.h&gt;</code><br />
+<code>#include &lt;netinet/tcp.h&gt;</code><br />
+<code>#include &lt;unistd.h&gt;</code><br />
+<code>#include &lt;stdio.h&gt;</code><br />
+<code>#include &lt;stdlib.h&gt;</code><br />
+<code>#include &lt;string&gt;</code><br />
+<code>#include &lt;vector&gt;</code><br />
+<code>#include &lt;arpa/inet.h&gt;</code><br />
+<code>#include &lt;cryptopp/cryptlib.h&gt;</code><br />
+<code>#include &lt;cryptopp/md5.h&gt;</code><br />
+<code>#include &lt;cryptopp/hex.h&gt;</code><br />
+<code>#include &lt;cryptopp/files.h&gt;</code><br />
+<code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;cmath&gt;</code><br />
+<code>#include &lt;cstdlib&gt;</code><br />
+<code>#include &lt;chrono&gt;</code><br />
+<code>#include &lt;thread&gt;</code><br />
+</div><div class="textblock"><div class="dynheader">
+Граф включаемых заголовочных файлов для TCPServer.cpp:</div>
+<div class="dyncontent">
+<div class="center"><img src="TCPServer_8cpp__incl.png" border="0" usemap="#aTCPServer_8cpp" alt=""/></div>
+<map name="aTCPServer_8cpp" id="aTCPServer_8cpp">
+<area shape="rect" title=" " alt="" coords="871,5,983,32"/>
+<area shape="rect" href="TCPServer_8h_source.html" title=" " alt="" coords="351,80,450,107"/>
+<area shape="rect" title=" " alt="" coords="137,229,209,256"/>
+<area shape="rect" title=" " alt="" coords="370,229,431,256"/>
+<area shape="rect" title=" " alt="" coords="25,155,112,181"/>
+<area shape="rect" title=" " alt="" coords="439,155,496,181"/>
+<area shape="rect" title=" " alt="" coords="520,155,575,181"/>
+<area shape="rect" title=" " alt="" coords="636,80,731,107"/>
+<area shape="rect" title=" " alt="" coords="755,80,823,107"/>
+<area shape="rect" title=" " alt="" coords="847,80,911,107"/>
+<area shape="rect" title=" " alt="" coords="935,80,1018,107"/>
+<area shape="rect" title=" " alt="" coords="1042,80,1173,107"/>
+<area shape="rect" title=" " alt="" coords="1197,80,1311,107"/>
+<area shape="rect" title=" " alt="" coords="1335,80,1443,107"/>
+<area shape="rect" title=" " alt="" coords="1467,80,1579,107"/>
+<area shape="rect" title=" " alt="" coords="1603,80,1662,107"/>
+<area shape="rect" title=" " alt="" coords="1687,80,1747,107"/>
+<area shape="rect" title=" " alt="" coords="1771,80,1833,107"/>
+<area shape="rect" title=" " alt="" coords="1857,80,1915,107"/>
+<area shape="rect" href="Logger_8h_source.html" title=" " alt="" coords="137,155,209,181"/>
+<area shape="rect" href="DataBaseLoader_8h_source.html" title=" " alt="" coords="233,155,363,181"/>
+<area shape="rect" title=" " alt="" coords="275,229,321,256"/>
+</map>
+</div>
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
+Макросы</h2></td></tr>
+<tr class="memitem:ab0e4d57d897ae69faaa40d46aaa06633"><td class="memItemLeft" align="right" valign="top"><a id="ab0e4d57d897ae69faaa40d46aaa06633"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>cplusplus</b></td></tr>
+<tr class="separator:ab0e4d57d897ae69faaa40d46aaa06633"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a60054cd46e0dc2ed04249519a5291cda"><td class="memItemLeft" align="right" valign="top"><a id="a60054cd46e0dc2ed04249519a5291cda"></a>
+#define&#160;</td><td class="memItemRight" valign="bottom"><b>CRYPTOPP_ENABLE_NAMESPACE_WEAK</b>&#160;&#160;&#160;1</td></tr>
+<tr class="separator:a60054cd46e0dc2ed04249519a5291cda"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Подробное описание</h2>
+<div class="textblock"><dl class="section version"><dt>Версия</dt><dd>1.0 </dd></dl>
+<dl class="section copyright"><dt>Авторство</dt><dd>ИБСТ ПГУ </dd></dl>
+<dl class="section warning"><dt>Предупреждения</dt><dd>учебный пример </dd></dl>
+</div></div><!-- contents -->
+<!-- start footer part -->
+<hr class="footer"/><address class="footer"><small>
+Создано системой&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.1
+</small></address>
+</body>
+</html>
