@@ -1,0 +1,100 @@
+\begin{theindex}
+
+  \item {$\sim$TCPServer}
+    \subitem {TCPServer}, \hyperpage{10}
+
+  \indexspace
+
+  \item {calcFunction}
+    \subitem {TCPServer}, \hyperpage{10}
+  \item {checkUserLogin}
+    \subitem {DataBaseLoader}, \hyperpage{5}
+  \item {closeServer}
+    \subitem {TCPServer}, \hyperpage{10}
+  \item {confPath}
+    \subitem {Opts}, \hyperpage{8}
+
+  \indexspace
+
+  \item {DataBaseLoader}, \hyperpage{5}
+    \subitem {checkUserLogin}, \hyperpage{5}
+    \subitem {delimiter}, \hyperpage{6}
+    \subitem {filePath}, \hyperpage{6}
+    \subitem {getUser}, \hyperpage{6}
+    \subitem {getUserPassword}, \hyperpage{6}
+    \subitem {loadData}, \hyperpage{6}
+    \subitem {users}, \hyperpage{6}
+  \item {delimiter}
+    \subitem {DataBaseLoader}, \hyperpage{6}
+
+  \indexspace
+
+  \item {filePath}
+    \subitem {DataBaseLoader}, \hyperpage{6}
+    \subitem {Logger}, \hyperpage{7}
+
+  \indexspace
+
+  \item {getUser}
+    \subitem {DataBaseLoader}, \hyperpage{6}
+  \item {getUserPassword}
+    \subitem {DataBaseLoader}, \hyperpage{6}
+
+  \indexspace
+
+  \item {handle}
+    \subitem {TCPServer}, \hyperpage{10}
+
+  \indexspace
+
+  \item {loadData}
+    \subitem {DataBaseLoader}, \hyperpage{6}
+  \item {Logger}, \hyperpage{7}
+    \subitem {filePath}, \hyperpage{7}
+    \subitem {WriteError}, \hyperpage{7}
+  \item {logPath}
+    \subitem {Opts}, \hyperpage{8}
+
+  \indexspace
+
+  \item {Opts}, \hyperpage{8}
+    \subitem {confPath}, \hyperpage{8}
+    \subitem {logPath}, \hyperpage{8}
+    \subitem {port}, \hyperpage{9}
+    \subitem {usage}, \hyperpage{8}
+
+  \indexspace
+
+  \item {port}
+    \subitem {Opts}, \hyperpage{9}
+
+  \indexspace
+
+  \item {startServer}
+    \subitem {TCPServer}, \hyperpage{11}
+
+  \indexspace
+
+  \item {TCPServer}, \hyperpage{9}
+    \subitem {$\sim$TCPServer}, \hyperpage{10}
+    \subitem {calcFunction}, \hyperpage{10}
+    \subitem {closeServer}, \hyperpage{10}
+    \subitem {handle}, \hyperpage{10}
+    \subitem {startServer}, \hyperpage{11}
+    \subitem {TCPServer}, \hyperpage{10}
+  \item {TCPServer.cpp}, \hyperpage{13}
+
+  \indexspace
+
+  \item {usage}
+    \subitem {Opts}, \hyperpage{8}
+  \item {User}, \hyperpage{11}
+  \item {users}
+    \subitem {DataBaseLoader}, \hyperpage{6}
+
+  \indexspace
+
+  \item {WriteError}
+    \subitem {Logger}, \hyperpage{7}
+
+\end{theindex}

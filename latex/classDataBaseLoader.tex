@@ -1,0 +1,95 @@
+\hypertarget{classDataBaseLoader}{}\doxysection{Класс Data\+Base\+Loader}
+\label{classDataBaseLoader}\index{DataBaseLoader@{DataBaseLoader}}
+
+
+{\ttfamily \#include $<$Data\+Base\+Loader.\+h$>$}
+
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classDataBaseLoader_a908bb9570c5149c63589950a0581cdd7}\label{classDataBaseLoader_a908bb9570c5149c63589950a0581cdd7}} 
+{\bfseries Data\+Base\+Loader} (std\+::string newfile\+Path)
+\item 
+\mbox{\hyperlink{structUser}{User}} \mbox{\hyperlink{classDataBaseLoader_af7188108bf52a1953dfe9afea0228505}{get\+User}} (std\+::string i)
+\item 
+bool \mbox{\hyperlink{classDataBaseLoader_ab35d8fab63539027f18bdd1eb6e10414}{check\+User\+Login}} (std\+::string login)
+\item 
+std\+::string \mbox{\hyperlink{classDataBaseLoader_ab587e6eec13fd7fa78c0b32576f5a971}{get\+User\+Password}} (std\+::string login)
+\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classDataBaseLoader_aaa6257269daaca55ff0a200cf7846ab7}{load\+Data}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+std\+::string \mbox{\hyperlink{classDataBaseLoader_a4c829b29c7f474a0d2b4332c7e1e9770}{file\+Path}}
+\item 
+std\+::map$<$ std\+::string, \mbox{\hyperlink{structUser}{User}} $>$ \mbox{\hyperlink{classDataBaseLoader_a285aa7307d82820997580f7c82c9deee}{users}}
+\item 
+std\+::string \mbox{\hyperlink{classDataBaseLoader_acac95ed7e64762bee9a0b027303e4797}{delimiter}} = \char`\"{} \char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+Класс для доступа к данным о пользоваетлях 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classDataBaseLoader_ab35d8fab63539027f18bdd1eb6e10414}\label{classDataBaseLoader_ab35d8fab63539027f18bdd1eb6e10414}} 
+\index{DataBaseLoader@{DataBaseLoader}!checkUserLogin@{checkUserLogin}}
+\index{checkUserLogin@{checkUserLogin}!DataBaseLoader@{DataBaseLoader}}
+\doxysubsubsection{\texorpdfstring{checkUserLogin()}{checkUserLogin()}}
+{\footnotesize\ttfamily bool Data\+Base\+Loader\+::check\+User\+Login (\begin{DoxyParamCaption}\item[{std\+::string}]{check\+Login }\end{DoxyParamCaption})}
+
+Проверить логин пользователя
+
+Проверить наличие пользователя \mbox{\Hypertarget{classDataBaseLoader_af7188108bf52a1953dfe9afea0228505}\label{classDataBaseLoader_af7188108bf52a1953dfe9afea0228505}} 
+\index{DataBaseLoader@{DataBaseLoader}!getUser@{getUser}}
+\index{getUser@{getUser}!DataBaseLoader@{DataBaseLoader}}
+\doxysubsubsection{\texorpdfstring{getUser()}{getUser()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{structUser}{User}} Data\+Base\+Loader\+::get\+User (\begin{DoxyParamCaption}\item[{std\+::string}]{i }\end{DoxyParamCaption})}
+
+Вернуть данные о пользователе по ID
+
+Вернуть пользователя по ID \mbox{\Hypertarget{classDataBaseLoader_ab587e6eec13fd7fa78c0b32576f5a971}\label{classDataBaseLoader_ab587e6eec13fd7fa78c0b32576f5a971}} 
+\index{DataBaseLoader@{DataBaseLoader}!getUserPassword@{getUserPassword}}
+\index{getUserPassword@{getUserPassword}!DataBaseLoader@{DataBaseLoader}}
+\doxysubsubsection{\texorpdfstring{getUserPassword()}{getUserPassword()}}
+{\footnotesize\ttfamily std\+::string Data\+Base\+Loader\+::get\+User\+Password (\begin{DoxyParamCaption}\item[{std\+::string}]{check\+Login }\end{DoxyParamCaption})}
+
+Вернуть пароль пользователя \mbox{\Hypertarget{classDataBaseLoader_aaa6257269daaca55ff0a200cf7846ab7}\label{classDataBaseLoader_aaa6257269daaca55ff0a200cf7846ab7}} 
+\index{DataBaseLoader@{DataBaseLoader}!loadData@{loadData}}
+\index{loadData@{loadData}!DataBaseLoader@{DataBaseLoader}}
+\doxysubsubsection{\texorpdfstring{loadData()}{loadData()}}
+{\footnotesize\ttfamily void Data\+Base\+Loader\+::load\+Data (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Загрузить базу из файла
+
+Считать файл с пользователями в переменную кеша 
+
+\doxysubsection{Данные класса}
+\mbox{\Hypertarget{classDataBaseLoader_acac95ed7e64762bee9a0b027303e4797}\label{classDataBaseLoader_acac95ed7e64762bee9a0b027303e4797}} 
+\index{DataBaseLoader@{DataBaseLoader}!delimiter@{delimiter}}
+\index{delimiter@{delimiter}!DataBaseLoader@{DataBaseLoader}}
+\doxysubsubsection{\texorpdfstring{delimiter}{delimiter}}
+{\footnotesize\ttfamily std\+::string Data\+Base\+Loader\+::delimiter = \char`\"{} \char`\"{}\hspace{0.3cm}{\ttfamily [private]}}
+
+Разделитель строки в файле \mbox{\Hypertarget{classDataBaseLoader_a4c829b29c7f474a0d2b4332c7e1e9770}\label{classDataBaseLoader_a4c829b29c7f474a0d2b4332c7e1e9770}} 
+\index{DataBaseLoader@{DataBaseLoader}!filePath@{filePath}}
+\index{filePath@{filePath}!DataBaseLoader@{DataBaseLoader}}
+\doxysubsubsection{\texorpdfstring{filePath}{filePath}}
+{\footnotesize\ttfamily std\+::string Data\+Base\+Loader\+::file\+Path\hspace{0.3cm}{\ttfamily [private]}}
+
+Путь к файлу \mbox{\Hypertarget{classDataBaseLoader_a285aa7307d82820997580f7c82c9deee}\label{classDataBaseLoader_a285aa7307d82820997580f7c82c9deee}} 
+\index{DataBaseLoader@{DataBaseLoader}!users@{users}}
+\index{users@{users}!DataBaseLoader@{DataBaseLoader}}
+\doxysubsubsection{\texorpdfstring{users}{users}}
+{\footnotesize\ttfamily std\+::map$<$std\+::string, \mbox{\hyperlink{structUser}{User}}$>$ Data\+Base\+Loader\+::users\hspace{0.3cm}{\ttfamily [private]}}
+
+закешированная база пользователей 
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+Data\+Base\+Loader.\+h\item 
+Data\+Base\+Loader.\+cpp\end{DoxyCompactItemize}

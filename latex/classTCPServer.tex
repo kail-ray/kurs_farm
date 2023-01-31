@@ -1,0 +1,105 @@
+\hypertarget{classTCPServer}{}\doxysection{Класс TCPServer}
+\label{classTCPServer}\index{TCPServer@{TCPServer}}
+
+
+Граф связей класса TCPServer\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=234pt]{classTCPServer__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classTCPServer_aad3a91192a6146951bf136efc5c2f202}{TCPServer}} (int new\+Port, std\+::string log\+Path, std\+::string conf\+Path)
+\item 
+\mbox{\hyperlink{classTCPServer_abc497ac52355e53986a6a1bd1acb9581}{$\sim$\+TCPServer}} ()
+\item 
+void \mbox{\hyperlink{classTCPServer_a170d91c49c6ee8cc4347919ec9ec102b}{start\+Server}} ()
+\item 
+void \mbox{\hyperlink{classTCPServer_a8498e02c9b9dc01fa814282b81442a8d}{close\+Server}} ()
+\item 
+void \mbox{\hyperlink{classTCPServer_a55270c5c109fee9a045d8b293a1f8283}{handle}} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые члены}
+\begin{DoxyCompactItemize}
+\item 
+long long \mbox{\hyperlink{classTCPServer_a8b75b07807e4088c4c85acaa611ab7e5}{calc\+Function}} (std\+::vector$<$ long long $>$ vector)
+\item 
+\mbox{\Hypertarget{classTCPServer_a8c14b241e6be5646079f1e64d0244bdd}\label{classTCPServer_a8c14b241e6be5646079f1e64d0244bdd}} 
+char $\ast$ {\bfseries recv\+Data} (int socket)
+\item 
+\mbox{\Hypertarget{classTCPServer_a0233ca6fcf1feb5856bf7ac64fce1089}\label{classTCPServer_a0233ca6fcf1feb5856bf7ac64fce1089}} 
+void {\bfseries send\+Data} (int socket, void $\ast$data)
+\end{DoxyCompactItemize}
+\doxysubsection*{Закрытые данные}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classTCPServer_a21840937afa84fa0131a4865e0dfa5d3}\label{classTCPServer_a21840937afa84fa0131a4865e0dfa5d3}} 
+unsigned short {\bfseries port}
+\item 
+\mbox{\Hypertarget{classTCPServer_abed20026e8c27232004c7ae160aa5488}\label{classTCPServer_abed20026e8c27232004c7ae160aa5488}} 
+int {\bfseries this\+\_\+s}
+\item 
+\mbox{\Hypertarget{classTCPServer_acb3537d63a7dad67b547de6e81f50e19}\label{classTCPServer_acb3537d63a7dad67b547de6e81f50e19}} 
+\mbox{\hyperlink{classLogger}{Logger}} {\bfseries logger}
+\item 
+\mbox{\Hypertarget{classTCPServer_a7a771f02cca0d6a9a44f2dc17d423378}\label{classTCPServer_a7a771f02cca0d6a9a44f2dc17d423378}} 
+\mbox{\hyperlink{classDataBaseLoader}{Data\+Base\+Loader}} {\bfseries data\+Base}
+\item 
+\mbox{\Hypertarget{classTCPServer_ac00bdd63fd0463e4dba203946f6fcff5}\label{classTCPServer_ac00bdd63fd0463e4dba203946f6fcff5}} 
+std\+::string {\bfseries error\+Client\+Msg} = \char`\"{}ERR\char`\"{}
+\item 
+\mbox{\Hypertarget{classTCPServer_ac462d387a3e71efe4f2519a5cbde58f7}\label{classTCPServer_ac462d387a3e71efe4f2519a5cbde58f7}} 
+std\+::string {\bfseries ok\+Client\+Msg} = \char`\"{}OK\char`\"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Конструктор(ы)}
+\mbox{\Hypertarget{classTCPServer_aad3a91192a6146951bf136efc5c2f202}\label{classTCPServer_aad3a91192a6146951bf136efc5c2f202}} 
+\index{TCPServer@{TCPServer}!TCPServer@{TCPServer}}
+\index{TCPServer@{TCPServer}!TCPServer@{TCPServer}}
+\doxysubsubsection{\texorpdfstring{TCPServer()}{TCPServer()}}
+{\footnotesize\ttfamily TCPServer\+::\+TCPServer (\begin{DoxyParamCaption}\item[{int}]{new\+Port = {\ttfamily 33333},  }\item[{std\+::string}]{log\+Path = {\ttfamily \char`\"{}/var/log/vcalc.log\char`\"{}},  }\item[{std\+::string}]{conf\+Path = {\ttfamily \char`\"{}/etc/vcalc.conf\char`\"{}} }\end{DoxyParamCaption})}
+
+Реализацтия конструктора \mbox{\Hypertarget{classTCPServer_abc497ac52355e53986a6a1bd1acb9581}\label{classTCPServer_abc497ac52355e53986a6a1bd1acb9581}} 
+\index{TCPServer@{TCPServer}!````~TCPServer@{$\sim$TCPServer}}
+\index{````~TCPServer@{$\sim$TCPServer}!TCPServer@{TCPServer}}
+\doxysubsubsection{\texorpdfstring{$\sim$TCPServer()}{~TCPServer()}}
+{\footnotesize\ttfamily TCPServer\+::$\sim$\+TCPServer (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Реализация деструктора 
+
+\doxysubsection{Методы}
+\mbox{\Hypertarget{classTCPServer_a8b75b07807e4088c4c85acaa611ab7e5}\label{classTCPServer_a8b75b07807e4088c4c85acaa611ab7e5}} 
+\index{TCPServer@{TCPServer}!calcFunction@{calcFunction}}
+\index{calcFunction@{calcFunction}!TCPServer@{TCPServer}}
+\doxysubsubsection{\texorpdfstring{calcFunction()}{calcFunction()}}
+{\footnotesize\ttfamily long long TCPServer\+::calc\+Function (\begin{DoxyParamCaption}\item[{std\+::vector$<$ long long $>$}]{vector }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [private]}}
+
+Функция обработки векторов \mbox{\Hypertarget{classTCPServer_a8498e02c9b9dc01fa814282b81442a8d}\label{classTCPServer_a8498e02c9b9dc01fa814282b81442a8d}} 
+\index{TCPServer@{TCPServer}!closeServer@{closeServer}}
+\index{closeServer@{closeServer}!TCPServer@{TCPServer}}
+\doxysubsubsection{\texorpdfstring{closeServer()}{closeServer()}}
+{\footnotesize\ttfamily void TCPServer\+::close\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+реализация закрытие сервера \mbox{\Hypertarget{classTCPServer_a55270c5c109fee9a045d8b293a1f8283}\label{classTCPServer_a55270c5c109fee9a045d8b293a1f8283}} 
+\index{TCPServer@{TCPServer}!handle@{handle}}
+\index{handle@{handle}!TCPServer@{TCPServer}}
+\doxysubsubsection{\texorpdfstring{handle()}{handle()}}
+{\footnotesize\ttfamily void TCPServer\+::handle (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+реализация основной логики \mbox{\Hypertarget{classTCPServer_a170d91c49c6ee8cc4347919ec9ec102b}\label{classTCPServer_a170d91c49c6ee8cc4347919ec9ec102b}} 
+\index{TCPServer@{TCPServer}!startServer@{startServer}}
+\index{startServer@{startServer}!TCPServer@{TCPServer}}
+\doxysubsubsection{\texorpdfstring{startServer()}{startServer()}}
+{\footnotesize\ttfamily void TCPServer\+::start\+Server (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+реализация запуска сервера 
+
+Объявления и описания членов классов находятся в файлах\+:\begin{DoxyCompactItemize}
+\item 
+TCPServer.\+h\item 
+\mbox{\hyperlink{TCPServer_8cpp}{TCPServer.\+cpp}}\end{DoxyCompactItemize}
